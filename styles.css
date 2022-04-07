@@ -1,0 +1,186 @@
+@import url("https://fonts.google.com/specimen/Kumbh+Sans");
+
+* {
+    font-family: Kumbh Sans;
+    font-weight: 400;
+}
+
+p{
+    font-size: 16px;
+}
+
+.navbar {
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+}
+.categories {
+    align-self: left;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.category2 {
+    align-self: right;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2%;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 5%;
+    color: hsl(219, 9%, 45%);
+}
+
+.sneaker {
+    font-weight: 700px;
+}
+
+.avatar {
+    margin-left: 8%;
+    width: 10%;
+}
+
+.cart {
+    margin-right: 5%;
+}
+
+.scene {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.disp{
+    flex: 0.5;
+    display: flex;
+    justify-items: flex-end !important;
+    flex-direction: column;
+
+}
+
+.content {
+    flex: 0.5;
+    padding: 5%;
+}
+
+.img1{
+    width: 70%;
+    border-radius: 5%;
+    align-self: flex-end;
+    padding-right: 1%;
+}
+
+.thumb{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.images {
+    width: 16.5%;
+    margin-left: 1%;
+    border-radius: 5%;
+    margin-top: 3%;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+}
+body{
+    background-color:hsl(223, 64%, 98%);
+    margin: auto;
+    width: 80%;
+}
+.discount {
+    margin-left: 1%;
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+    border: none;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.main-price {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.composer {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    width: 100%;
+}
+.bx{
+    color: white;
+}
+
+/* <!...cart-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    width: 20%;
+}  */
+
+.box {
+    display:flex;
+    flex-direction: row;
+    background-color: hsl(223, 64%, 98%);
+    flex: 0.3;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adding-to-cart{
+    flex: 0.5;
+    color: hsl(26, 100%, 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 2% 0%;
+   border-radius: 10px;
+   border: none;
+   background-color: hsl(26, 100%, 55%);
+   gap: 5%;
+}
+
+.minus {
+    margin-left: 5%;
+}
+
+.summation {
+    color: black;
+}
+
+.plus {
+    margin-right: 5%;
+}
+
+/* responsiveness code here*/
+/* this is for desktop*/
+@media screen and (max-width: 375px){
+
+}
+
+/* this is for mobile*/
+@media screen and (min-width: 14440px){
+
+}
