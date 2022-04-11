@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <meta name="description" content="Solution for Frontend Mentor 'Time-Tracking Dashboard' challenge">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Time tracking dashboard</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: #000;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <h1 class="hidden">Time Tracking Dashboard</h1>
+    <div class="container grid">
+      <!-- Begin Profile -->
+      <section class="profile">
+        <h2 class="hidden">Profile</h2>
+        <header tabindex="0" class="profile__content">
+          <img id="avatar" src="images/image-jeremy.png" alt="avatar">
+          <p>
+            <span class="profile__title">Report for</span>
+            <span class="profile__name">Jeremy Robson</span>
+          </p>
+        </header>
+        <section tabindex="0" class="profile__period">
+          <h3 class="hidden">Timeframes</h3>
+          <span tabindex="0" class="active period" data-period="daily">
+            Daily
+          </span>
+          <span tabindex="0" class="period" data-period="weekly">
+            Weekly
+          </span>
+          <span tabindex="0" class="period" data-period="monthly">
+            Monthly
+          </span>
+        </section>
+      </section>
+      <!-- End of Profile -->
+
+      <div class="output">
+        <!-- Begin of Work -->
+        <div class="widget work">
+          <section class="details">
+            <h2 tabindex="0" class="widget__title">Work</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="line-second">
+              <span class="hidden">current</span>
+              <span class="current" id="currentWork">--</span>
+              <span id="previousWork" class="prev"></span>
+            </p>
+          </section>
+        </div>
+        <!-- End of Work -->
+        <!-- Begin of Play -->
+        <div class="widget play">
+          <section class="details">
+            <h2 tabindex="0" class="widget__title">Play</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="line-second">
+              <span class="hidden">current</span>
+              <span class="current" id="currentPlay">--</span>
+              <span id="previousPlay" class="prev"></span>
+            </p>
+          </section>
+        </div>
+        <!-- End of Play-->
+        <!-- Begin of Study-->
+        <div class="widget study">
+          <section class="details">
+            <h2 tabindex="0" class="widget__title">Study</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="line-second">
+              <span class="hidden">current</span>
+              <span class="current" id="currentStudy">--</span>
+              <span id="previousStudy" class="prev"></span>
+            </p>
+          </section>
+        </div>
+        <!-- End of Study -->
+        <!-- Begin of Exercise-->
+        <div class="widget exercise">
+          <section class="details">
+            <h2 tabindex="0" class="widget__title">Exercise</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="line-second">
+              <span class="hidden">current</span>
+              <span class="current" id="currentExercise">--</span>
+              <span id="previousExercise" class="prev"></span>
+            </p>
+          </section>
+        </div>
+        <!-- End of Exercise -->
+        <!-- Begin of Social-->
+        <div class="widget social">
+          <section class="details">
+            <h2 tabindex="0" class="widget__title">Social</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="line-second">
+              <span class="hidden">current</span>
+              <span class="current" id="currentSocial">--</span>
+              <span id="previousSocial" class="prev"></span>
+            </p>
+          </section>
+        </div>
+        <!-- End of Social -->
+        <!-- Begin of Self-care-->
+        <div class="widget self-care">
+          <section class="details">
+            <h2 tabindex="0" class="widget__title">Self care</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="line-second">
+              <span class="hidden">current</span>
+              <span class="current" id="currentSelfCare">--</span>
+              <span id="previousSelfCare" class="prev"></span>
+            </p>
+          </section>
+        </div>
+        <!-- End of Self-care-->
+      </div>
+      <!-- End of output -->
+    </div>
+    <!-- End of container -->
+  </main>
+  <script type="module" src="scripts/script.js"></script>
+</body>
+
+</html>
